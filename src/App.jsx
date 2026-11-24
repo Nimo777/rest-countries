@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import axios from "axios";
+// import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import FilterRegion from "./components/RegionFilter";
 import CountryCard from "./components/CountryCard";
 import CountryDetail from "./components/CountryDetail";
+import countriesData from './API/data.json'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("");
-  const [countries, setCountries] = useState([]);
+  const [countries] = useState(countriesData);
   const [selectedCountry, setSelectedCountry] = useState(false);
   useEffect(() => {
     document.documentElement.setAttribute(
@@ -19,11 +20,11 @@ function App() {
     );
   }, [isDarkMode]);
 
-  useEffect(() => {
-    axios.get("/src/API/data.json")
-      .then((res) => setCountries(res.data))
-      .catch((err) => console.error(err));
-  }, []);
+  // useEffect(() => {
+  //   axios.get("/src/API/data.json")
+  //     .then((res) => setCountries(res.data))
+  //     .catch((err) => console.error(err));
+  // }, []);
 
   const filteredCountries = countries.filter((country) => {
     const matchesSearch = country.name.toLowerCase()
