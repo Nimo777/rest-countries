@@ -6,20 +6,17 @@ A React app that shows countries from the REST Countries API, with a details pag
 
 ## Screenshot
 
-![Screenshot of the app]
 <img width="2880" height="1626" alt="image" src="https://github.com/user-attachments/assets/7dadd78c-b454-441e-9b6c-791d97324b01" />
-
 
 ## Features
 
 - Browse all countries from the REST Countries API
 - Details page for each country (React Router)
-- [Search by name]
-- [Filter by region]
-- [Light and dark theme]
+- Search by name
+- Filter by region
+- Light and dark theme
 - Responsive layout
 
-(Delete or edit any line that is not true for your app.)
 
 ## Built with
 
