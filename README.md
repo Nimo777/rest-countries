@@ -1,16 +1,51 @@
-# React + Vite
+# REST Countries Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that shows countries from the REST Countries API, with a details page for each country. Solution to the Frontend Mentor "REST Countries API with color theme switcher" challenge.
 
-Currently, two official plugins are available:
+**Live demo:** https://nimo777.github.io/rest-countries/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshot
 
-## React Compiler
+![Screenshot of the app]
+<img width="2880" height="1626" alt="image" src="https://github.com/user-attachments/assets/7dadd78c-b454-441e-9b6c-791d97324b01" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse all countries from the REST Countries API
+- Details page for each country (React Router)
+- [Search by name]
+- [Filter by region]
+- [Light and dark theme]
+- Responsive layout
+
+(Delete or edit any line that is not true for your app.)
+
+## Built with
+
+- React
+- Vite
+- React Router
+- CSS
+- REST Countries API
+- GitHub Pages (deployment)
+
+## What I learned
+
+- Fetching data from an API and handling loading and errors
+- Routing with React Router
+- Deploying a Vite app to GitHub Pages
+- [Add one thing that was hard for you and how you solved it]
+
+## Run it locally
+
+```bash
+git clone https://github.com/Nimo777/rest-countries.git
+cd rest-countries
+npm install
+npm run dev
+```
+
+## Author
+
+- GitHub: [@Nimo777](https://github.com/Nimo777)
